@@ -1,0 +1,10 @@
+<div>
+  <button value="export to Excel" (click)="exportToExcel()">Export to Excel</button>
+  <ng-container *ngFor="let person of persons">
+    <div style="display: flex; flex-direction: row; gap: 5%;">
+      <div>{{person.name}}</div>
+      <div>{{person.address}}</div>
+      <div>{{person.phone}}</div>
+    </div>
+  </ng-container>
+</div>
