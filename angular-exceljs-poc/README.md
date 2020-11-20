@@ -47,12 +47,5 @@ workbook.xlsx.writeBuffer().then((data) => {
     fs.saveAs(blob, 'PersonSearchResults.xlsx');
 });
 ```
-
 ## Source Code
 Source code of this https://github.com/AMVijay/angular-learning/tree/main/angular-exceljs-poc
-
-
-
-
-
-
