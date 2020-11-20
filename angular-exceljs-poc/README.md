@@ -25,6 +25,7 @@ Example Implementation of Excel File Generation from Angular using exceljs node 
 * As similar to workbook, new sheet creation is as simple as `let worksheet = workbook.addWorksheet("<sheet name>");`
 * `addRow()`, `getCell(<column number>)` methods help to create new row and get cell value.
 * Below snippet would help understand the simple sheet creation 
+
 ```typescript
 let workbook = new Workbook();
 let worksheet = workbook.addWorksheet("Person Details");
