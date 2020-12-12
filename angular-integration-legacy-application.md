@@ -1,5 +1,5 @@
 ## Objective
-Here, exploring the solution options to integrated (embed or redirect) the angular application inside legacy application. 
+Here, exploring the solution options to integrate the Angular Application with Legacy Application running with JSP, PHP, or any other UI Page.
 
 ## Solution Option 1 
 * If existing application uses Spring MVC (JSPs) for UI, and the requirement is render complete angular application in UI (No JSP fragments), and If there is no requirement to retain the existing application menu, header and navigation code then this approach works.
@@ -61,4 +61,3 @@ If the requirement is embed or render specific Angular Components in different J
 </body>
 
 ```
-
