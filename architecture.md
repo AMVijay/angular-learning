@@ -22,10 +22,10 @@ Dependency Injection design pattern is used in Angular to inject the Service Cla
 
 ## Structure Architecture
 Angular uses node/npm for its project external library dependencies, build. 
-
 Important file in that are : 
 ## package.json
 * This configuration file contains specification about angular version, project library dependency details with version.
+
 ## tsconfig.json
 * This configuration file describes about typescript compilation path, folder structure.
 
