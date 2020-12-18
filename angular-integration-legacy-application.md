@@ -73,3 +73,20 @@ Using JQuery load the angular index page first inside div, and on success set th
 </body>
 
 ```
+
+## Scenario 4
+**Scenario description**
+The requirement is to render angular component UI as stataed in above scenarios, and need to protect the particular functionality from specific user roles. 
+**Solution**
+Create hidden variable in existing page with flag value true or false based on user role condition. 
+```html
+<input type="hidden" name="<variableName>" id="<variableName>" value="true"/>
+```
+Then, use below pattern of code to access the hidden variable from angular component. 
+```javascript
+if(document.getElementById("<HTMLVariableName>") != null){
+    this.<angularVariableName> = (<HTMLInputElement>document.getElementById("<HTMLVariableName>")).value;
+}
+```
+and then, use this component variable in HTML template to hide/show elements.
+
