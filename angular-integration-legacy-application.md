@@ -2,9 +2,10 @@
 Here, exploring the solution options to integrate the Angular Application with Legacy Application running with JSP, PHP, or any other UI Page.
 
 ## Scenario 1 
-* **scenario description:** If existing application uses Spring MVC (JSPs) for UI, and requirement is to 
-	* Render complete angular application in UI and no need to render inside JSP.
-	* And There is no requirement to retain the existing application menu, header and navigation code then this approach works.    
+**scenario description:** 
+If existing application uses Spring MVC (JSPs) for UI, and requirement is to 
+* Render complete angular application in UI and no need to render inside JSP.
+* And There is no requirement to retain the existing application menu, header and navigation code then this approach works.    
 
 **Solution**
 * Controller method can return ModelAndView object with redirect as `return new ModelAndView("redirect:" + <angular application url>);`
@@ -25,9 +26,10 @@ public void redirectToAngularApplication(HttpServletResponse httpServletResponse
 ```
 
 ## Scenario 2
-* **scenario description:** Existing application uses any tech stack (JSP or Spring MVC or PHP or Python), and the requirement is to 
-	* Retain the existing application menu, header and navigation code as it is in legacy application
-	* Render the Angular UI inside the existing application with all menus, headers.     
+**scenario description:** 
+If Existing application uses any tech stack (JSP or Spring MVC or PHP or Python), and the requirement is to 
+* Retain the existing application menu, header and navigation code as it is in legacy application
+* Render the Angular UI inside the existing application with all menus, headers.     
 
 **Solution**
 * Use JQuery's .load() function to render the angular application page content in JSP as below.
@@ -50,7 +52,8 @@ In this approach, advantages are, Angular application will be rendered in client
 * If angular application is package inside same war and deployed, then can use `<jsp:include page="</relative path of angular index.html>"/>`
 
 ## Scenario 3 
-* **Scenario Description** If the requirement is to render particular component (which is configured with Angular Routing). 
+**Scenario Description** 
+If the requirement is to render particular component (which is configured with Angular Routing) inside existing application page.  
 **Solution** 
 Using JQuery load the angular index page first inside div, and on success set the location has to the routing path.
 ```html
