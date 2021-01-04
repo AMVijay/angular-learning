@@ -29,10 +29,11 @@ Important file in that are :
 ### tsconfig.json
 * This configuration file describes about typescript compilation path, folder structure.
 
-## Angular Specific HTML Syntax
-* `{{}}` - This one used to replace the string content in HTML from angular variable. 
-* `()` - This one to bridge the event to angular component function call. 
-* `[]` - This one is for one way binding. 
-* `[()]` - This one is for two way binding. 
+## Angular Specific Syntax for HTML
+* `{{<variable name from the associated angular component>}}` - This one used to replace the string content in HTML from angular variable. 
+* `(<method name from the associated angular component>)` - This one to bridge the event to angular component function call. 
+* `[<variable name from the associated angular component>]` - This one is for one way binding. 
+* `[(<variable name from the associated angular component>)]` - This one is for two way binding. 
 * `[ngClass]` - This is to assign CSS class dynamically from angular component variable.
 * `[ngStyle]` - This is to assign CSS Style dynamically from angular component variable.
+* `[(ngModel)]` - Two binding the value of component to form/model class in angular component. We need to import @angular/forms to use this attribute.
