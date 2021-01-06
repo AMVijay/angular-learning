@@ -23,13 +23,19 @@ Dependency Injection design pattern is used in Angular to inject the Service Cla
 ## Structure Architecture
 Angular uses node/npm for its project external library dependencies, build. 
 Important file in that are : 
-## package.json
+### package.json
 * This configuration file contains specification about angular version, project library dependency details with version.
 
-## tsconfig.json
+### tsconfig.json
 * This configuration file describes about typescript compilation path, folder structure.
 
-
-
-
-
+## Angular Specific Syntax for HTML
+* `{{<variable name from the associated angular component>}}` - This one used to replace the string content in HTML from angular variable. 
+* `(<method name from the associated angular component>)` - This one to bridge the event to angular component function call. 
+* `[<variable name from the associated angular component>]` - This one is for one way binding. 
+* `[(<variable name from the associated angular component>)]` - This one is for two way binding. 
+* `[ngClass]` - This is to assign CSS class dynamically from angular component variable.
+* `[ngStyle]` - This is to assign CSS Style dynamically from angular component variable.
+* `[(ngModel)]` - Two binding the value of component to form/model class in angular component. We need to import @angular/forms to use this attribute.
+* `*ngIf` - This conditional statement helps to determine whether HTML element need to be rendered or not.
+* `*ngFor` - This conditional statement helps to create group of same type HTML elements in loop with dynamic fields.
