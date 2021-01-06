@@ -37,3 +37,5 @@ Important file in that are :
 * `[ngClass]` - This is to assign CSS class dynamically from angular component variable.
 * `[ngStyle]` - This is to assign CSS Style dynamically from angular component variable.
 * `[(ngModel)]` - Two binding the value of component to form/model class in angular component. We need to import @angular/forms to use this attribute.
+* `*ngIf` - This conditional statement helps to determine whether HTML element need to be rendered or not.
+* `*ngFor` - This conditional statement helps to create group of same type HTML elements in loop with dynamic fields.
